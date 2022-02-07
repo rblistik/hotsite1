@@ -1,0 +1,242 @@
+﻿@model Interesse
+
+@* Primeira parte do código *@ 
+
+<div class="row">
+
+    <div class="col md-6">
+        <h1>Iniciativa Saúde da Cidade</h1>
+
+        <p> oremm popu adehm santi lorem popise  
+        </p>
+        <bR>
+        <p>çlorem lorem ipsus clorem pundit avatar
+lorem ipsus lorem ipsus lorem ipsus .
+Opundit lorem ipsus clorem nautilus sanctis trindas.
+        </p>
+        <br>
+        
+        
+
+    </div>
+
+    <div class="col md-6">
+       <img src="/img/saude.jpeg" width="500px" class="rounded">
+    </div>
+
+</div>
+
+
+@* Segunda parte do código *@ 
+
+<div class="row mt-3">
+
+    @* Formulário *@ 
+    <div class="col-md-6 border border-dark border-radius:15px rounded" id="frm">
+        <h2>Entre em contato!:</h2>
+        <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+
+        <form  method="POST" id="frmCadastro">
+            <div class="row">
+                <div class="col-md-2">
+                    <label asp-for="Nome">Nome:</label>
+                </div>
+                <div class="col-md-10">    
+                    <input asp-for="Nome" id="nome" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2">
+                    <label asp-for="Email">Email:</label>
+                </div>
+                <div class="col-md-10">    
+                    <input asp-for="Email" id="email"/>
+                </div>
+            </div>
+
+            
+            <div class="row">
+                <div class="col-md-2">
+                    <label asp-for="Mensagem">Mensagem (opcional):</label>
+                </div>
+                <div class="col-md-10">    
+                    <textarea asp-for="Mensagem" id="mensagem"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" value="Enviar" class="mb-3" id="btnSubmit"/>
+                </div>
+            </div>    
+        </form>
+    </div>
+
+    <div class="col-md-6">
+        
+        <div class="row">
+            <div class="col-md-4">
+                <figure class="figure">
+                <img src="/img/agenda.jpeg" class="figure-img img-fluid rounded" alt="Agenda de eventos">
+                <figcaption class="figure-caption text-center">
+                    <a href="#" data-toggle="modal" data-target="#AgendaDeEventos">Agenda de eventos</a>
+                </figcaption>
+                    
+                </figure>
+            </div>
+
+            <div class="col-md-4">
+                <figure class="figure">
+                <img src="/img/saude.jpeg" class="figure-img img-fluid rounded" alt="Dicas de vida saudável" width="150px">
+                <figcaption class="figure-caption text-center">
+                    <a href="#" data-toggle="modal" data-target="#DicasdevidaSaudavel">Dicas de vida saudável</a>
+                </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-md-4">
+                <figure class="figure">
+                <img src="/img/saude.jpeg" class="figure-img img-fluid rounded" alt="Apoiadores">
+                <figcaption class="figure-caption text-center">
+                    <a href="#" data-toggle="modal" data-target="#Apoiadores">Apoiadores</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="AgendaDeEventos" tabindex="-1" role="dialog" aria-labelledby="exampleAgendaDeEventos" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleAgendaDeEventos">Agenda </h5>
+
+      </div>
+      <div class="modal-body">
+        <p> SENAC T.I. TERCEIRA IDADE </p>
+        <p> JORNADA DE CARREIRA EM T.I. PARA CIDADAO ACIMA DE 50 ANOS. </p>
+
+        <p> Saúde Mental TERCEIRA IDADE- JOBS EM I.T.  </p>
+        <p> SENAC PROMOVE ENCONTRO DE EMPRESAS DE T.I. COM FORMANDOs DOs CURSOS EM INFORMATICA PARA INTERNET.</p>
+
+        <p> BE COOL </p>
+        <p>Aorem praxis divinus spiritus sanctis snactisl lroem santic</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="DicasdevidaSaudavel" tabindex="-1" role="dialog" aria-labelledby="DicasdevidaSaudavel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleDicasdevidaSaudavel">Dicas de vida saudável</h5>
+
+      </div>
+      <div class="modal-body">
+        <p>
+          <ol>
+            <li>Uma vida saudável começa com a alimentação balanceada</li>
+
+            <li>Mantenha uma boa rotina de sono</li>
+
+            <li>Evite o sedentarismo</li> 
+
+            <li>Beba muita água</li> 
+
+            <li>Inclua alimentos detox na alimentação</li> 
+
+            <li>Ovos na alimentação</li> 
+
+            <li>Nem toda gordura é ruim</li> 
+
+            <li>Inclua o chocolate amargo e meio amargo</li> 
+
+            <li>Evite o açúcar e alimentos processados</li> 
+
+            <li>Não pule refeições</li> 
+          </ol>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Apoiadores" tabindex="-1" role="dialog" aria-labelledby="exampleApoiadores" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleApoiadores">Apoiadores</h5>
+
+      </div>
+      <div class="modal-body">
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col-1 m-3 d-flex align-items-center">
+                  <img src="icons/emoji-wink-fill.svg" alt="" width="42" height="42">
+              </div>
+
+              <div class=" row col-8 m-3 d-flex align-items-left">
+                  <p class="texto-estilo m-0">Nutrição do bem</p>
+                  <p class="texto-estilo m-1">Equipe de nutricionistas altamente capacitadas para indicar a alimentação mais saudável</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-1 m-3 d-flex align-items-center">
+                  <img src="icons/house.svg" alt="" width="42" height="42">
+              </div>
+
+              <div class=" row col-8 m-3 d-flex align-items-left">
+                  <p class="texto-estilo m-0">Clinica Saúde</p>
+                  <p class="texto-estilo m-1">A clinica médica para cuidar de você.</p>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-1 m-3 d-flex align-items-center">
+                  <img src="icons/activity.svg" alt="" width="42" height="42">
+              </div>
+
+              <div class=" row col-8 m-3 d-flex align-items-left">
+                  <p class="texto-estilo m-0">Academia Gym</p>
+                  <p class="texto-estilo m-1">O espaço ideal para prática de exercícios.</p>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-1 m-3 d-flex align-items-center">
+                  <img src="icons/heart-half.svg" alt="" width="42" height="42">
+              </div>
+
+              <div class=" row col-8 m-3 d-flex align-items-left">
+                  <p class="texto-estilo m-0">Suplementos do bem</p>
+                  <p class="texto-estilo m-1">Os melhores suplementos alimentares</p>
+              </div>
+              
+            </div>
+          </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+
